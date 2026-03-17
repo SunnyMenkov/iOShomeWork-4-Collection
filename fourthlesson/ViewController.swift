@@ -128,7 +128,7 @@ extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = currentSection == 0 ? fruits[indexPath.row] : animals[indexPath.row]
         
-        let alert = UIAlertController(title: "Выбрано", message: item, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Выбрано", message: item, preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
     }
